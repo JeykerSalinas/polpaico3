@@ -8,3 +8,17 @@
 ,,1,2018-05-08T20:50:00Z,2018-05-08T20:51:00Z,2018-05-08T20:50:00Z,west,A,62.73,cpu,usage_system
 ,,1,2018-05-08T20:50:00Z,2018-05-08T20:51:00Z,2018-05-08T20:50:20Z,west,B,12.83,cpu,usage_system
 ,,1,2018-05-08T20:50:00Z,2018-05-08T20:51:00Z,2018-05-08T20:50:40Z,west,C,51.62,cpu,usage_system
+
+{
+    result:"",
+    table:0,
+    _start_:2018-05-08T20:50:00Z,
+    _stop_:2018-05-08T20:51:00Z,
+    _time:2018-05-08T20:50:00Z,
+    region:east,
+    host:A,
+    _value:15.43,
+    _measurement:cpy,
+    _field:usage_system
+
+}

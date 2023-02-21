@@ -1,0 +1,8 @@
+- npm install
+- nodemon index.js
+- link desde postman para enviar una notificación: http://127.0.0.1:3000/notification
+- Ruta index prueba: http://127.0.0.1:3000/home
+- puntos de conección y escuchar a socket.io desde el front:
+  - conectado
+  - message
+- Desde el front debe apuntar ejemplo: io.connect('ws://127.0.0.1:3000',{ transports: ['websocket'] })
