@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url';
 import * as dotenv from "dotenv";
 dotenv.config();
 import {socketIo} from './utils/socket.js'
+import {task} from "./scheduler/scheduler.js"
 
 //SERVER STATEMENTS
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -29,6 +30,8 @@ app.use(cors());
 
 //RUN SOCKET
 socketIo(io)
+//TASK
+task()
 
 
 // ROUTES
