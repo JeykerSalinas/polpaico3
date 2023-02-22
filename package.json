@@ -16,8 +16,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "influx": "^5.9.3",
+    "moment": "^2.29.4",
     "nodemon": "^2.0.20",
     "socket.io": "^4.6.1",
-    "socket.io-client": "^4.6.1"
+    "socket.io-client": "^4.6.1",
+    "write-excel-file": "^1.4.22"
   }
 }

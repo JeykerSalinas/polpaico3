@@ -5,11 +5,9 @@ import http from 'http'
 import { Server } from "socket.io";
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-// import { Point } from "@influxdata/influxdb-client";
-// import { influxDB } from "./config/database.js";
 import * as dotenv from "dotenv";
-import {socketIo} from './utils/socket.js'
 dotenv.config();
+import {socketIo} from './utils/socket.js'
 
 //SERVER STATEMENTS
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -27,7 +25,7 @@ app.get("/home",(req,res)=>{
 // Middlewares
 app.use(json());
 app.use(urlencoded({ extended: false }));
-app.use(cors({ origin: process.env.URL.split(",") }));
+app.use(cors());
 
 //RUN SOCKET
 socketIo(io)

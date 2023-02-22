@@ -6,6 +6,7 @@ const router = Router();
 //Root
 router.get("/",(req,res)=> res.status(200).send("Notification APP"))
 //Notification
-router.post("/notification", notification.notification )
+router.get("/notification", notification.notification )
+router.get("/search_data", notification.getDataNotification )
 
 export default router;
